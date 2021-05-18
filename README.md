@@ -1,24 +1,27 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This readme is for learning process of RAILS API only
 
-Things you may want to cover:
+- Create new rails API app
 
-* Ruby version
+  - run rails new app_name --api
 
-* System dependencies
+- Install mysql database
 
-* Configuration
+  - run gem install mysql2
 
-* Database creation
+- Create model database
 
-* Database initialization
+  - run rails g model Modelname column1:type1 column2:type2
 
-* How to run the test suite
+- Create migration to database
 
-* Services (job queues, cache servers, search engines, etc.)
+  - run rails g migration Columnname column1:type1
 
-* Deployment instructions
+- Run migration to the database
 
-* ...
+  - run rails db:migrate
+
+- Create dummy data on seeds
+  - install Faker to create automatic dummy data
+  - run rails db:seed
